@@ -1,5 +1,5 @@
 ---
-layout: testy
+layout: cayman_custom
 ---
 
 <h1 id="testing">Testing</h1>
