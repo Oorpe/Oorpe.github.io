@@ -1,0 +1,18 @@
+
+  <!-- <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <a href="{{ site.baseurl }}/category/{{category_name}}">{{ category_name }}</a>
+  </div> -->
+
+<ul class="mdl-list">
+    {% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+  <li class="mdl-list__item mdl-list__item--two-line">
+    <span class="mdl-list__item-primary-content">
+      <!-- <i class="material-icons mdl-list__item-avatar">person</i> -->
+      <a href="{{ site.baseurl }}/category/{{category_name}}">{{ category_name }}</a>
+      <!-- <span class="mdl-list__item-sub-title">62 Episodes</span> -->
+    </span>
+</li>
+{% endfor %}
+</ul>

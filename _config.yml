@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
-title: [Dumb words]
-description: ["Rants and bad reasoning on web design, programming and whatnot."]
+title: "Dumb words"
+description: "Rants and bad reasoning on web design, programming and whatnot."
 markdown: kramdown
 kramdown:
    auto_ids: true

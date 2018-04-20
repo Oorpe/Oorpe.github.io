@@ -1,0 +1,19 @@
+---
+layout: r_post
+---
+<h1>Stuff filed under {{page.category}}</h1>
+
+<ul class="demo-list-item mdl-list">
+    {% for post in site.categories[page.category] %}
+    <li class="mdl-list__item mdl-list__item--two-line">
+
+        <span class="mdl-list__item-primary-content" >
+            <i class="material-icons mdl-list__item-icon">{{page.icon}}</i>
+            <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            <span class="mdl-list__item-sub-title">{{post.date | date_to_string}}</span>
+
+        </span>
+
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,8 @@
+
+
+{% if page.next and page.next.categories contains page.catgories[0] %}
+   <a href="{{ page.next.url }}">Next Post: {{page.next.title}}</a>
+  {%endif%}
+ {% if page.previous and page.previous.categories contains page.categories[0] %}
+   <a href="{{ page.previous.url }}">Previous Post: {{page.previous.title}}</a>
+ {% endif %}
