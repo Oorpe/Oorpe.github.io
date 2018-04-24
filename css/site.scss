@@ -9,8 +9,8 @@ blockquote{
 }
 
 blockquote:before{
-  content: "”\A"
+  content: '\00000A';
 }
 blockquote:after{
-  content: "”"
+  content: "”";
 }
