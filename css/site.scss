@@ -7,7 +7,7 @@
 
 
 blockquote:before{
-  content: '\00000A';
+  content: '”\00000A';
 }
 blockquote:after{
   content: "”";
