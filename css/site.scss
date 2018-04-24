@@ -4,6 +4,13 @@
 
 @import "sidenav";
 
+blockquote{
+  white-space:pre;
+}
+
 blockquote:before{
   content: "”\A"
+}
+blockquote:after{
+  content: "”"
 }
