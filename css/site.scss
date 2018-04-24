@@ -4,13 +4,10 @@
 
 @import "sidenav";
 
-blockquote{
-  white-space:pre;
-}
+
 
 blockquote:before{
   content: '\00000A';
-  display: block;
 }
 blockquote:after{
   content: "”";
