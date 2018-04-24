@@ -3,3 +3,7 @@
 ---
 
 @import "sidenav";
+
+blockquote:before{
+  content: "”\A"
+}
