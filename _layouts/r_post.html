@@ -1,26 +1,11 @@
 ---
 layout: main
 ---
-
-           {{content}}
-
-           {% for post in site.categories.personal %}
-                {% if post.url == page.url %}
-                    {% assign post_index0 = forloop.index0 %}
-                    {% assign post_index1 = forloop.index %}
-                {% endif %}
-            {% endfor %}
-            {% for post in site.categories.personal %}
-                {% if post_index0 == forloop.index %}
-                    {% assign next_post = post.url %}
-                {% endif %}
-                {% if post_index1 == forloop.index0 %}
-                    {% assign prev_post = post.url %}
-                {% endif %}
-            {% endfor %}
-            {% if next_post %}
-                <a href="{{ next_post }}">Next Post</a> <br>
-            {% endif %}
-            {% if prev_post %}
-                <a href="{{ prev_post }}">Previous Post</a> <br>
-            {% endif %}
+<div style="height: 48px; width: 100%;"></div>
+ <div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"></div>
+  <div class="mdl-cell mdl-cell--8-col mdl-cell--10-col-phone">
+      {{content}}
+  </div>
+  <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"></div>
+</div>

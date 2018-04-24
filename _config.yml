@@ -1,6 +1,14 @@
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
 title: "Dumb words"
 description: "Rants and bad reasoning on web design, programming and whatnot."
 markdown: kramdown
 kramdown:
    auto_ids: true
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "one_card"

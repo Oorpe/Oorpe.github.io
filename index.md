@@ -1,5 +1,5 @@
 ---
-layout: cayman_custom
+layout: r_post
 ---
 
 # Some such noise

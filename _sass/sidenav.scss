@@ -1,33 +1,6 @@
 
 
-
-.r-sidenav-container{
-
-    flex: auto;
-    max-width: 30vw;
-
-    .r-sidenav-item{
-
-    }
-
-
-
-}
-
-.r-sidenav-link{
-
-    p{
-        margin-bottom: 0px;
-    }
-
-    span{
-
-    }
-
-}
-
-.mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  // color: gray;
+.mdl-card {
+    overflow: visible;
+    z-index: auto;
 }

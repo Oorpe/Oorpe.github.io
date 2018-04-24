@@ -1,19 +1,21 @@
 ---
-layout: r_post
+layout: one_card
 ---
-<h1>Stuff filed under {{page.category}}</h1>
+<!-- <h1>Stuff filed under {{page.category}}</h1> -->
 
 <ul class="demo-list-item mdl-list">
     {% for post in site.categories[page.category] %}
-    <li class="mdl-list__item mdl-list__item--two-line">
+    <li class="mdl-list__item mdl-list__item">
 
         <span class="mdl-list__item-primary-content" >
-            <i class="material-icons mdl-list__item-icon">{{page.icon}}</i>
-            <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-            <span class="mdl-list__item-sub-title">{{post.date | date_to_string}}</span>
+            <!-- <i class="material-icons mdl-list__item-icon">{{page.icon}}</i> -->
+            <!-- <a  id="{{post.id}}" href="{{ post.url | absolute_url }}">{{ post.title }}</a> -->
+            {% include peeky_link.html post=post %}
+            <!-- <span class="mdl-list__item-sub-title">{{post.date | date_to_string}}</span>  -->
 
         </span>
 
     </li>
+
     {% endfor %}
 </ul>

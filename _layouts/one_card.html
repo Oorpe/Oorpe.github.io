@@ -1,0 +1,21 @@
+---
+layout: r_post
+---
+
+<div style="width: 100%;" class=" mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title mdl-card--border">
+        <h5 class="mdl-card__title-text">{{page.title}}</h5>
+        <div class="mdl-layout-spacer"></div>
+        <p class="mdl-card__subtitle-text">{{page.date | date_to_long_string}}</p>
+        {% if page.icon %}
+        <i class="material-icons mdl-list__item-icon">{{page.icon}}</i>
+        {%endif%}
+
+    </div>
+  <div class="mdl-card__supporting-text">
+    {{content}}
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    {% include categorical_next_prev.html%}
+  </div>
+</div>

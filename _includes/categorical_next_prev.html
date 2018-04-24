@@ -1,0 +1,24 @@
+
+{%assign cat = page.category%}
+{% for post in site.categories[cat] %}
+     {% if post.url == page.url %}
+         {% assign post_index0 = forloop.index0 %}
+         {% assign post_index1 = forloop.index %}
+     {% endif %}
+ {% endfor %}
+ {% for post in site.categories[cat] %}
+     {% if post_index0 == forloop.index %}
+
+         {% assign next_thing = post %}
+     {% endif %}
+     {% if post_index1 == forloop.index0 %}
+         {% assign prev_thing = post %}
+     {% endif %}
+ {% endfor %}
+        {% if prev_thing %}
+            {% include peeky_link.html post=prev_thing p_prev="true" %}
+        {% endif %}
+        <div class="mdl-layout-spacer"></div>
+        {% if next_thing %}
+            {% include peeky_link.html post=next_thing p_next="true" %}
+        {% endif %}
