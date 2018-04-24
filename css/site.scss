@@ -10,6 +10,7 @@ blockquote{
 
 blockquote:before{
   content: '\00000A';
+  display: block;
 }
 blockquote:after{
   content: "”";
