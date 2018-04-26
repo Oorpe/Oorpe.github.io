@@ -1,6 +1,6 @@
 ---
 layout: one_card
-category: professional
+category: programming
 title: "Getting started"
 
 ---
@@ -24,4 +24,3 @@ title: "Getting started"
 <blockquote>
 <p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
 </blockquote>
-

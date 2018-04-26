@@ -1,13 +1,12 @@
-<!-- <div  style="display: relative"> -->
+
     <div class="mdl-tooltip" data-mdl-for="{{include.post.url}}">
         {{include.post.description | default: include.post.title | truncate: 52}}
     </div>
-    <a id="{{include.post.url}}" href="{{ include.post.url }}" class="mdl-button mdl-button--colored">
+    <a id="{{include.post.url}}" href="{{ include.post.url }}"
+        class="mdl-button mdl-button--accent">
       {% if include.p_prev == "true" %}{% assign which = "prev: "%}{%endif%}
       {% if include.p_next == "true" %}{% assign which = "next: "%}{%endif%}
       {% capture title %}{{which}}{{include.post.title}}{%endcapture%}
       <small>{{include.post.date | date_to_string}}</small>
       {{title | truncate: 32}}
-  </a>
-
-<!-- </div> -->
+    </a>

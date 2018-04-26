@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Blogging with Jekyll | Dumb words</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Blogging with Jekyll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Getting up to speed with a new tech is always more interesting than doing what you’re supposed to" />
+<meta property="og:description" content="Getting up to speed with a new tech is always more interesting than doing what you’re supposed to" />
+<link rel="canonical" href="http://localhost:4000/programming/2018/04/26/getting-up-to-speed-with-Jekyll.html" />
+<meta property="og:url" content="http://localhost:4000/programming/2018/04/26/getting-up-to-speed-with-Jekyll.html" />
+<meta property="og:site_name" content="Dumb words" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-04-26T04:39:46-04:00" />
+<script type="application/ld+json">
+{"description":"Getting up to speed with a new tech is always more interesting than doing what you’re supposed to","@type":"BlogPosting","url":"http://localhost:4000/programming/2018/04/26/getting-up-to-speed-with-Jekyll.html","headline":"Blogging with Jekyll","dateModified":"2018-04-26T04:39:46-04:00","datePublished":"2018-04-26T04:39:46-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/programming/2018/04/26/getting-up-to-speed-with-Jekyll.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=7d826cfb048065ebe54ce61d066f1f7ac68d847e">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.js"></script>
+</head>
+<body>
+
+
+    <div class="mdl-layout mdl-js-layout ">
+
+        <header class="mdl-layout__header mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <a style="color: white;" class="mdl-layout-title" href="/" >
+                    <span>Dumb words</span>
+                </a>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <a id="my_github" class="mdl-navigation__link" href="https://github.com/Oorpe">
+                        <img width="32" height="32" src="/assets/GitHub-Mark-Light-64px.png">
+                    </a>
+
+
+
+                </nav>
+                <p class="mdl-tooltip" data-mdl-for="my_github">
+                    My github profile
+                </p>
+
+            </div>
+        </header>
+        <div class="mdl-layout__drawer" >
+
+            
+    
+<ul class="mdl-list">
+    <li class="mdl-list__item mdl-list__item--two-line">
+        <a class="mdl-layout-title" href="/" >
+            <span>Dumb words</span>
+        </a>
+    </li>
+
+    
+    
+  <li class="mdl-list__item">
+      <a href="/category/programming" data-badge="2"
+       class=" mdl-list__item-primary-content mdl-badge mdl-badge--overlap">programming</a>
+</li>
+
+</ul>
+
+
+        </div>
+        <main class="mdl-layout__content">
+            <div style="height: 48px; width: 100%;"></div>
+ <div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"></div>
+  <div class="mdl-cell mdl-cell--8-col mdl-cell--10-col-phone">
+      <div style="width: 100%;" class=" mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title mdl-card--border">
+        <h5 class="mdl-card__title-text">Blogging with Jekyll</h5>
+        <div class="mdl-layout-spacer"></div>
+        <p class="mdl-card__subtitle-text">26 April 2018</p>
+        
+
+    </div>
+  <div class="mdl-card__supporting-text">
+    <h2 id="getting-up-to-speed-with-jekyll">getting up to speed with Jekyll</h2>
+
+<p>I’ve never been very interested with blogging.</p>
+
+<p>This spring something’s come over me, and I’ve been writing a lot in a very short amount of time. So I figured that I should finally get started on building some kind of blog to post some of this outpouring of written word. I’d been eying github pages as a blogging platform for a while, so this seemed as good a time as any to get started on some kind of a web presence.</p>
+
+<h3 id="how-do-you--">How do you- ?</h3>
+
+<p>So, at first I created the repo for my profile blog. I selected a theme, wrote little snippets of code and tried posting them. Then I lost interest and dropped the thing for a month.</p>
+
+<p>Only after realizing I’m a few months late on my thesis and desperately looking around for ways to procrastinate instead of working on it, I came across the blog repo and found a real font of wasting time I should be using on getting my studies done in a reasonable time. So I installed the required gems for local development and got to researching jekyll.</p>
+
+<p>As a start, I got going by leafing through github pages’ article on blogging with Jekyll and set up the project.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    |- _includes
+    |- _layouts
+        |- main.html
+        |- post.html
+    _posts
+</code></pre></div></div>
+
+<p>I decided I wanted to use some sweet, sweet material design for the site’s styling, instead of one of the default themes that come with the <code class="highlighter-rouge">github-pages</code> ruby gem. I originally opted for MDL, the reference implementation of Material Design that is fairly framework-agnostic and lightweight.</p>
+
+<h3 id="styling">Styling</h3>
+
+<p>MDL is neat in that it has a set of prebuilt color schemed CSS files in it’s CDN, allowing me to just specify the primary-secondary colors I want to use in my site via the link tag: <code class="highlighter-rouge">&lt;link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.[ primary + '-' + accent ].min.css"&gt;</code>. After building the site with thematic colors via <code class="highlighter-rouge">mdl-primary</code> and <code class="highlighter-rouge">mdl-accent</code> classes, I can change the colors represented by the keywords by just downloading a different stylesheet.</p>
+
+<h3 id="categories">Categories</h3>
+
+<p>I also wanted to have a rudimentary category system. This isn’t directly built in to Jekyll, so it took a moment to cobble the functionality together, especially since the system wasn’t exactly familiar to me beforehand.</p>
+
+<p>Jekyll’s post system is based around a Rails-y concept of convention over configuration. Every post in the _posts directory is treated as a post as long as it’s name follows a certain naming scheme- “YYYY-MM-DD-name-of-post” + file suffix. In liquid templating, jekyll presents a bunch of variables to be used inside the templates, as well as logical structures to be run at build time. This allows for constructing pretty elaborate use cases, like a categorical way to construct navigation buttons.</p>
+
+<h3 id="creating-some-includes">Creating some includes</h3>
+
+<p>Well, since this is a templating language, let’s define some pretty templates for common functionality.</p>
+
+<p>First we’ll need a nice link to a post. I’d decided to have a basic description field in the yaml front matters of all of my posts, for displaying little blurbs of the post. These were a natural way to prettify my links, adding tooltips that would give a quick blurb about the contents of the post being linked. The include file itself is a basic liquid include, which is passed one to three parameters: <code class="highlighter-rouge">post</code>, the post object to link to, <code class="highlighter-rouge">p_prev</code> which determines whether this link points to a post in the past, and <code class="highlighter-rouge">p_next</code> which determines if this link points to a post in the future.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-tooltip"</span> <span class="na">data-mdl-for=</span><span class="s">"{{include.post.url}}"</span><span class="nt">&gt;</span>
+        {{include.post.description | default: include.post.title | truncate: 52}}
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"{{include.post.url}}"</span> <span class="na">href=</span><span class="s">"{{ include.post.url }}"</span>
+        <span class="na">class=</span><span class="s">"mdl-button mdl-button--accent"</span><span class="nt">&gt;</span>
+      {% if include.p_prev == "true" %}{% assign which = "prev: "%}{%endif%}
+      {% if include.p_next == "true" %}{% assign which = "next: "%}{%endif%}
+      {% capture title %}{{which}}{{include.post.title}}{%endcapture%}
+      <span class="nt">&lt;small&gt;</span>{{include.post.date | date_to_string}}<span class="nt">&lt;/small&gt;</span>
+      {{title | truncate: 32}}
+    <span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>Using MDL, I added tooltips and button styling to the links, as well as basic truncation to the tooltip texts and the title length in order to keep the total text lengths sane.</p>
+
+<p>This file is placed in the directory <code class="highlighter-rouge">_includes</code>, and included every time I link to a post from another post, a menu or an archive page.</p>
+
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    
+
+
+ 
+        
+            
+    <div class="mdl-tooltip" data-mdl-for="/programming/2018/04/24/getting-started.html">
+        Getting started
+    </div>
+    <a id="/programming/2018/04/24/getting-started.html" href="/programming/2018/04/24/getting-started.html"
+        class="mdl-button mdl-button--accent">
+      
+      
+      
+      <small>24 Apr 2018</small>
+      prev: Getting started
+    </a>
+
+        
+        <div class="mdl-layout-spacer"></div>
+        
+
+  </div>
+</div>
+
+  </div>
+  <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"></div>
+</div>
+
+        </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <ul class="mdl-mini-footer__link-list">
+                    <!-- <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy & Terms</a></li> -->
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
