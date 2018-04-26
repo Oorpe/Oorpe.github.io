@@ -63,6 +63,10 @@ First we'll need a nice link to a post. I'd decided to have a basic description 
 ```
 {%endraw%}
 
+
+> An aside, if you want to display jekyll's liquid tags in a code block on a jekyll site, wrap the block you don't want to be rendered in `raw`/`endraw` tags. This allows for code blocks with luquid syntax in them to be rendered correctly
+
+
 Using MDL, I added tooltips and button styling to the links, as well as basic truncation to the tooltip texts and the title length in order to keep the total text lengths sane.
 
 This file is placed in the directory `_includes`, and included every time I link to a post from another post, a menu or an archive page.
