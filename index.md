@@ -10,5 +10,5 @@ layout: r_post
 <blockquote>
 <p>“Write garbage, then sieve for gold nuggets”.</p>
 </blockquote>
-<p>If you’re a crazy person and want to sieve through someone else’s garbage, go ahead. The archives are over there <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>←</mo></mrow><annotation encoding="application/x-tex">\leftarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.36687em;"></span><span class="strut bottom" style="height: 0.36687em; vertical-align: 0em;"></span><span class="base"><span class="mrel">←</span></span></span></span></span>.</p>
+<p>If you’re a crazy person and want to sieve through someone else’s garbage, go ahead. The archives are over there \leftarrow.</p>
 
