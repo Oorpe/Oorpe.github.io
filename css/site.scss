@@ -4,7 +4,26 @@
 
 @import "sidenav";
 
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
 
+$gradient1 : rgba(104, 169, 255, 0.3);
+$gradient2 : transparent;
+$angle : 60deg;
+
+body{
+    background: linear-gradient(45deg, $gradient1, $gradient2);
+    // animation-name: example;
+    // animation-duration: 4s;
+}
+
+.mdl-layout__container{
+    background: linear-gradient($angle, $gradient1, $gradient2);
+}
 
 blockquote {
   background: #f9f9f9;

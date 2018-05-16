@@ -7,6 +7,6 @@
       {% if include.p_prev == "true" %}{% assign which = "prev: "%}{%endif%}
       {% if include.p_next == "true" %}{% assign which = "next: "%}{%endif%}
       {% capture title %}{{which}}{{include.post.title}}{%endcapture%}
-      <small>{{include.post.date | date_to_string}}</small>
       {{title | truncate: 32}}
+      <small>{{include.post.date | date_to_string}}</small>
     </a>

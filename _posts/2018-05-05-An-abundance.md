@@ -1,7 +1,7 @@
 ---
 title: An abundance
 date: 2018-05-05 06:18:11 -0400
-category: personal
+categories: personal
 ---
 
 The problem with an abundance of things to do is choosing priorities.

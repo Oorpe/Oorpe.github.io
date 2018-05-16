@@ -1,6 +1,14 @@
 @charset "UTF-8";
 .mdl-card { overflow: visible; z-index: auto; }
 
+@keyframes example { 0% { background-color: red; }
+  25% { background-color: yellow; }
+  50% { background-color: blue; }
+  100% { background-color: green; } }
+body { background: linear-gradient(45deg, rgba(104, 169, 255, 0.3), transparent); }
+
+.mdl-layout__container { background: linear-gradient(60deg, rgba(104, 169, 255, 0.3), transparent); }
+
 blockquote { background: #f9f9f9; border-left: 10px solid #ccc; margin: 2em 10px; margin-left: 2em; margin-right: 0px; padding: 0.5em 10px; quotes: "“" "”" "‘" "’"; }
 
 blockquote:before { color: #ccc; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; }
